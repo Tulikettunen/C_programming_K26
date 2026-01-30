@@ -4,5 +4,9 @@
 
 #ifndef WEEK2_T4_H
 #define WEEK2_T4_H
+#include <stdio.h>
+
+int read_integer(int num);
+float average();
 
 #endif //WEEK2_T4_H
