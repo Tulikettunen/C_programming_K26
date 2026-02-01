@@ -5,4 +5,8 @@
 #ifndef WEEK2_T5_H
 #define WEEK2_T5_H
 
+#include <stdio.h>
+
+int read_range(int low, int high);
+
 #endif //WEEK2_T5_H

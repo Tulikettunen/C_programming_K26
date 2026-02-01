@@ -5,4 +5,6 @@
 #ifndef WEEK2_T6_H
 #define WEEK2_T6_H
 
+int read_range(int low, int high);
+
 #endif //WEEK2_T6_H
