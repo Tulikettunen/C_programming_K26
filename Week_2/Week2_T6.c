@@ -2,27 +2,36 @@
 // Created by tuuli on 28/01/2026.
 //
 
+//TUULI'S NOTES ABOUT THE ASSIGNENMENT!!:
+//Ohjelmaan lisätty tehtävänannon ulkopuolelta kielivalinta suomi/englanti.
+//Omaksi iloksi, ja koska alkuperäinen tehtävä oli suomeksi, ja nykyään kirjoitan englanniksi,
+//ja tuli sotkuisen näköinen, ja ääkköset ei toimi, joten päätin lisätä vähän toiminnallisuutta tehtävään.
+//(read_range funktio siirretty My_C_header.c/.h tiedostoihin, koska se on yleiskäyttöinen,
+//tämän vuoksi siihen ei vielä implementoitu kielivalikkoa)
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <stdbool.h>
 #include "Week2_T6.h"
 #include "Week2_T4.h"
+#include "C:/Users/tuuli/CLionProjects/My_C_header/My_C_header.h"
 
 #define DICE_6 6
 #define DICE_10 10
 
-int main(void){
+#ifdef T6_DONE
+
+int main_T6(void){
     bool ton = true;
     int choice;
     int language;
     //int *language_p = &language;
     printf("Welcome to the dice throwing program!\n");
-    printf("Please select a language / Valitse kieli:\n1. English (recommended)\n 2. Suomi (kaikkia merkkejä ei välttämättä tueta))\n:");
+    printf("Please select a language / Valitse kieli:\n1. English (recommended)\n2. Suomi (kaikkia merkkejä ei välttämättä tueta))\n");
     language = read_range(1,2);
 
     while (ton){
-        language = read_range(1,2);
     	print_menu(&language);
     	choice = read_range(1,3);
 
@@ -91,6 +100,8 @@ void print_menu(int *lan){
     }
 }
 
+
+//No longer needed exactly, old ones, replaced with multifaceted function roll_dice_X in My_C_header.h
 int roll_d6(){
     printf("Heität D6 noppaa!\n");
     srand(time(NULL));
@@ -115,36 +126,5 @@ int roll_d20(){
     return 0;
 }
 
-int roll_dice_X(int dice_X){
-	srand(time(NULL));
-    printf("Heität d%d noppaa!\n", dice_X);
-    int x = dice_X + 1;
-    int y = x;
-    while(x > dice_X) {
-        x = 1 + rand()/((y + 1u)/dice_X);
-    }
-    printf("Silmäluku:%d \n",  x);
-    return x;
-}
+#endif //CODE_DONE
 
-int read_integer(void){
-    int num = 0;
-    while (scanf(" %d", &num) != 1 ){
-        while(getchar() != '\n');
-        printf("Invalid input, try again\n");
-    }
-    while(getchar() != '\n');
-    printf("Successful entering \n");
-    return num;
-}
-
-int read_range(int low, int high){
-    int user_input;
-    while ((scanf("%d", &user_input) != 1) || (user_input < low) || (user_input > high)){  //Looppaa kunnes syötteestä luettu onnistuneesti yksi integeri, joka on halutulla välillä.
-        while(getchar() != '\n'); //virheen käsittelyä
-        printf("That was not a number between %d-%d. \n", low, high);
-        printf("Try again:\n");
-    }
-    while(getchar() != '\n');   // virheen käsittely
-    return user_input;
-}

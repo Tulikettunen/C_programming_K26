@@ -1,6 +1,21 @@
-This is a C programmin course in Metropolia University of Applied science. The point of the course is to learn the basics of C-programmin, especially in a context of embedded systems, wich is the major of my studies.
+This is a C programming course in Metropolia University of Applied science. The point of the course is to learn the basics of C-programmin, especially in a context of embedded systems, wich is the major of my studies.
 
-The tasks and assignements are listed below:
+.
+
+About the structure of the project and how to use it:
+
+The project is made up of several individual exercises. For practicality and learning perspective, the project is build as a CMake project, with one main.c file, and an user interface to run individual programs.
+
+The programs can be enabled or disabled with a simple switch, by commenting or deleting a defined argument "#define T< X >_DONE " from the said tasks header file, where X is the number of the task. The argument is a switch for #ifdef and #if define directives in the main.c file and in the unfinished tasks, so that the unfinished, not building tasks won't cause build errors. 
+
+The project also includes my own generally reusable functions from My_C_header.h file, where I have started collecting my own functions. Many of the programs rely on these functions.
+
+
+.
+.
+.
+
+The tasks and assignments are listed below:
 
 
 Exercises:

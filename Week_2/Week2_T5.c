@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include "Week2_T5.h"
 
-int main(){
+int main_T5(){
     printf("Let's play!\n");
     int lowest = 1;
     int highest = 6;
@@ -13,7 +13,7 @@ int main(){
 
     for (int i = 0; i < 3; i++) {
         printf("Enter a number between %d and %d.\n", lowest, highest);
-        user_roll = read_range(lowest, highest);
+        user_roll = read_range_T5(lowest, highest);
         if (user_roll == highest) {
             printf("I got 6. It is a tie!\n");
         }
@@ -22,10 +22,12 @@ int main(){
         }
     }
     printf("Better luck next time. Bye!");
+    return 0;
 }
 
+
 //FUNCTIONS:
-int read_range(int low, int high){
+int read_range_T5(int low, int high){
     int user_roll;
     printf("Roll a D%d dice, and enter the number you got:\n", high);
     while ((scanf("%d", &user_roll) != 1) || (user_roll < low) || (user_roll > high)){  //Looppaa kunnes syötteestä luettu onnistuneesti yksi integeri, joka on halutulla välillä.

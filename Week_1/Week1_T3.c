@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "Week1_T3.h"
-int main(void){
+int main_T3(void){
 
   bool tof = true;
   int student_no;

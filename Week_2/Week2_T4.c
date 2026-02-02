@@ -4,8 +4,9 @@
 #include <stdio.h>
 #include "Week2_T4.h"
 #include <stdbool.h>
+#include "C:/Users/tuuli/CLionProjects/My_C_header/My_C_header.h"
 
-int main(){
+int main_T4(){
     int sum = 0;
     int count = 0;
     int num = 0;
@@ -25,8 +26,9 @@ int main(){
     return 0;
 }
 
+/*
 //FUNCTIONS:
-int read_integer(void){
+int read_integer(){
     int num = 0;
     while (scanf(" %d", &num) != 1 ){
         while(getchar() != '\n');
@@ -36,10 +38,12 @@ int read_integer(void){
     printf("Successful entering \n");
     return num;
 }
+*/
 
 
 // Improved version with extra character check, does not allow extra characters after integer input, does not work yet, fucking pain in the ass,
 //Luulin et sain sen ratkastua viimevuonna, mutta ei näköjään toimikkaan..
+#if 0
 int read_integer2(void){
     int num = 0;
     char wrongchr;
@@ -61,6 +65,7 @@ int read_integer2(void){
     printf("Successful entering \n");
     return num;
 }
+#endif
 
 float average(int sum, int count){
   float average = sum / (count * 1.0);

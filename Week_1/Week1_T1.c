@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include "Week1_T1.h"
 
-int main() {
+int main_T1() {
     bool tof = true;
 
     float bus_ticket = 0.0;

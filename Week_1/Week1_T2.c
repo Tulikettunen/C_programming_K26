@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include "Week1_T2.h"
 
-int main(){
+int main_T2(){
     float salary_arr [MONTHS];
     float tax_arr [MONTHS];
 
