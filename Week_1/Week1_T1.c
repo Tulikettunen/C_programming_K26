@@ -7,6 +7,7 @@
 #include "Week1_T1.h"
 
 int main_T1() {
+    printf("WARNING: This program does not have input error handling, please enter valid inputs!\n");
     bool tof = true;
 
     float bus_ticket = 0.0;

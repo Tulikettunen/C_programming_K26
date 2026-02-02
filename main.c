@@ -30,42 +30,48 @@ int main(){
 
             case 1:
     #if defined(T1_DONE)
+                printf("\nRunning Task 1:\n");
                 main_T1();
                 break;
     #endif
 
             case 2:
     #if defined(T2_DONE)
+                printf("\nRunning Task 2:\n");
                 main_T2();
                 break;
     #endif
 
             case 3:
     #if defined(T3_DONE)
+                printf("\nRunning Task 3:\n");
                 main_T3();
                 break;
     #endif
 
             case 4:
     #if defined(T4_DONE)
+                printf("\nRunning Task 4:\n");
                 main_T4();
                 break;
     #endif
 
             case 5:
     #if defined(T5_DONE)
+                printf("\nRunning Task 5:\n");
                 main_T5();
                 break;
     #endif
 
             case 6:
     #if defined(T6_DONE)
+                printf("\nRunning Task 6:\n");
                 main_T6();
                 break;
     #endif
 
             default:
-                printf("Invalid task number.\n");
+                printf("Invalid task number or disabled unfinished exercise.\n");
                 break;
             }
     }

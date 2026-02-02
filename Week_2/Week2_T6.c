@@ -56,29 +56,6 @@ int main_T6(void){
     			break;
     	}
     }
-
-/*
-    while(ton){
-        print_menu();
-        if (scanf("%d", &choice) != 1) {
-            while(getchar() != '\n');
-            printf("Syötäthän vain numeroita! Valitse 1 Menussa esitetyistä vaihtoehdoista.\n");
-        }else if (choice == 1) {
-            roll_d6();
-            while(getchar() != '\n');
-        }else if (choice == 2){
-            while(getchar() != '\n');
-            roll_d20();
-        }else if (choice == 3) {
-            while(getchar() != '\n');
-            ton = false;
-        }else {
-            while(getchar() != '\n');
-            printf("Syöttämänne valinta ei ole kelvollinen, valitse 1 Menussa esitetyistä vaihtoehdoista.\n");
-        }
-    }
-
- */
     return 0;
 }
 
@@ -114,13 +91,13 @@ int roll_d6(){
     return 0;
 }
 
-int roll_d20(){
+int roll_d10(){
     srand(time(NULL));
 
-    printf("Heität d20 noppaa!\n");
-    int x = 21;
-    while(x > 20) {
-        x = 1 + rand()/((21 + 1u)/20);
+    printf("Heität d10 noppaa!\n");
+    int x = 11;
+    while(x > 10) {
+        x = 1 + rand()/((21 + 1u)/10);
     }
     printf("Silmäluku:%d \n",  x);
     return 0;

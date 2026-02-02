@@ -26,23 +26,10 @@ int main_T4(){
     return 0;
 }
 
-/*
-//FUNCTIONS:
-int read_integer(){
-    int num = 0;
-    while (scanf(" %d", &num) != 1 ){
-        while(getchar() != '\n');
-        printf("Invalid input, try again\n");
-    }
-    while(getchar() != '\n');
-    printf("Successful entering \n");
-    return num;
-}
-*/
-
 
 // Improved version with extra character check, does not allow extra characters after integer input, does not work yet, fucking pain in the ass,
 //Luulin et sain sen ratkastua viimevuonna, mutta ei näköjään toimikkaan..
+//LÖYTYY MYÖS My_C_header tiedostosta, VARO RISTIMUOKKAUSTA!!
 #if 0
 int read_integer2(void){
     int num = 0;

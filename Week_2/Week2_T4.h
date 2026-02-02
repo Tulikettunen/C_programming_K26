@@ -4,13 +4,11 @@
 
 #ifndef WEEK2_T4_H
 #define WEEK2_T4_H
-#include <stdio.h>
 
 #define T4_DONE
 
 int main_T4();
 
-//int read_integer();
 //int read_integer2(void);
 float average();
 

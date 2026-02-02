@@ -6,6 +6,8 @@
 #include "Week1_T2.h"
 
 int main_T2(){
+    printf("WARNING: This program does not have input error handling, please enter valid inputs!\n");
+
     float salary_arr [MONTHS];
     float tax_arr [MONTHS];
 
