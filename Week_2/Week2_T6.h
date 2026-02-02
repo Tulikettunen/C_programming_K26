@@ -7,7 +7,7 @@
 
 int roll_d6();
 int roll_d20();
-int print_menu(int *lan);
+void print_menu(int *lan);
 int read_range(int low, int high);
 int roll_dice_X(int dice_X);
 

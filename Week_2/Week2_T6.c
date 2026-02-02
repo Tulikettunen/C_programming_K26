@@ -16,13 +16,14 @@ int main(void){
     bool ton = true;
     int choice;
     int language;
+    //int *language_p = &language;
     printf("Welcome to the dice throwing program!\n");
     printf("Please select a language / Valitse kieli:\n1. English (recommended)\n 2. Suomi (kaikkia merkkejä ei välttämättä tueta))\n:");
     language = read_range(1,2);
 
     while (ton){
         language = read_range(1,2);
-    	print_menu(language);
+    	print_menu(&language);
     	choice = read_range(1,3);
 
     	switch (choice){
