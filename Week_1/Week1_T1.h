@@ -5,7 +5,7 @@
 #ifndef WEEK1_T1_H
 #define WEEK1_T1_H
 
-#define T1_DONE
+#define T1_DONE 1
 
 int main_T1();
 float bus_ticket_price(float bus_price);

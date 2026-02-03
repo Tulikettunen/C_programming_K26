@@ -10,9 +10,12 @@
 #include "Week_2/Week2_T4.h"
 #include "Week_2/Week2_T5.h"
 #include "Week_2/Week2_T6.h"
+#include "Week_3/Week3_T7.h"
+#include "Week_3/Week3_T8.h"
+#include "Week_3/Week3_T9.h"
 #include "C:/Users/tuuli/CLionProjects/My_C_header/My_C_header.h"
 
-#define TOTAL_TASKS 6
+#define TOTAL_TASKS 9
 
 
 int main(){
@@ -28,45 +31,67 @@ int main(){
                 tof = false;
                 break;
 
+    #if T1_DONE
             case 1:
-    #if defined(T1_DONE)
                 printf("\nRunning Task 1:\n");
                 main_T1();
                 break;
     #endif
 
-            case 2:
     #if defined(T2_DONE)
+            case 2:
                 printf("\nRunning Task 2:\n");
                 main_T2();
                 break;
     #endif
 
-            case 3:
     #if defined(T3_DONE)
+            case 3:
                 printf("\nRunning Task 3:\n");
                 main_T3();
                 break;
     #endif
 
-            case 4:
     #if defined(T4_DONE)
+            case 4:
                 printf("\nRunning Task 4:\n");
                 main_T4();
                 break;
     #endif
 
-            case 5:
     #if defined(T5_DONE)
+            case 5:
                 printf("\nRunning Task 5:\n");
                 main_T5();
                 break;
     #endif
 
-            case 6:
     #if defined(T6_DONE)
+            case 6:
                 printf("\nRunning Task 6:\n");
                 main_T6();
+                break;
+    #endif
+
+    #if defined(T7_DONE)
+            case 7:
+                printf("\nRunning Task 7:\n");
+                main_T7();
+                break;
+    #endif
+
+    #if defined(T8_DONE)
+            case 8:
+
+                printf("\nRunning Task 8:\n");
+                main_T8();
+                break;
+    #endif
+
+    #if defined(T9_DONE)
+            case 9:
+                printf("\nRunning Task 9:\n");
+                main_T9();
                 break;
     #endif
 

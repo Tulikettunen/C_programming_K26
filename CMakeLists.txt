@@ -17,6 +17,12 @@ add_executable(C_programming_K26
     "Week_2/Week2_T6.c"
     "C:/Users/tuuli/CLionProjects/My_C_header/My_C_header.c"
         main.c
+        Week_3/Week3_T7.c
+        Week_3/Week3_T7.h
+        Week_3/Week3_T8.c
+        Week_3/Week3_T8.h
+        Week_3/Week3_T9.c
+        Week_3/Week3_T9.h
 )
 target_include_directories(${PROJECT_NAME} PRIVATE
     Own_headers

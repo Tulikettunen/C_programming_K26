@@ -47,6 +47,10 @@ int main_T1() {
                     printf("Taxi trip paid, %6.2f € left in bank account \n", money_in_account);
                 }
             }
+            else {
+                printf("Invalid input. Quitting transport program, bye bye!\n");
+                tof = false;
+            }
         }
     }
 }
