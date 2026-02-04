@@ -8,7 +8,8 @@ The project is made up of several individual exercises. For practicality and lea
 
 The programs can be enabled or disabled with a simple switch, by commenting or deleting a defined argument "#define T< X >_DONE " from the said tasks header file, where X is the number of the task. The argument is a switch for #ifdef and #if define directives in the main.c file and in the unfinished tasks, so that the unfinished, not building tasks won't cause build errors. 
 
-The project also includes my own generally reusable functions from My_C_header.h file, where I have started collecting my own functions. Many of the programs rely on these functions.
+The project also includes my own generally reusable functions from My_C_header.h file, where I have started collecting my own functions. Many of the programs rely on these functions. 
+Link to that repo: https://github.com/Tulikettunen/My_C_header
 
 
 .
