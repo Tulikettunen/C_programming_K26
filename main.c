@@ -13,9 +13,10 @@
 #include "Week_3/Week3_T7.h"
 #include "Week_3/Week3_T8.h"
 #include "Week_3/Week3_T9.h"
+#include "Week_4/Week4_T10.h"
 #include "C:/Users/tuuli/CLionProjects/My_C_header/My_C_header.h"
 
-#define TOTAL_TASKS 9
+#define TOTAL_TASKS 10
 
 
 int main(){
@@ -94,6 +95,13 @@ int main(){
                 main_T9();
                 break;
     #endif
+
+#if T10_DONE
+            case 10:
+                printf("\nRunning Task 10:\n");
+                main_T10();
+                break;
+#endif
 
             default:
                 printf("Invalid task number or disabled unfinished exercise.\n");

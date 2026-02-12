@@ -23,6 +23,12 @@ add_executable(C_programming_K26
         Week_3/Week3_T8.h
         Week_3/Week3_T9.c
         Week_3/Week3_T9.h
+        Week_4/Week4_T10.h
+        Week_4/Week4_T10.c
+        Week_4/Week4_T11.h
+        Week_4/Week4_T11.c
+        Week_4/Week4_T12.h
+        Week_4/Week4_T12.c
 )
 target_include_directories(${PROJECT_NAME} PRIVATE
     Own_headers
