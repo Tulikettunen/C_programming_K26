@@ -14,7 +14,7 @@
 #include "Week_3/Week3_T8.h"
 #include "Week_3/Week3_T9.h"
 #include "Week_4/Week4_T10.h"
-#include "C:/Users/tuuli/CLionProjects/My_C_header/My_C_header.h"
+#include "My_C_header/My_C_header.h"
 
 #define TOTAL_TASKS 10
 
