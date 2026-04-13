@@ -13,7 +13,7 @@ prints the length etc.).
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-#include "My_C_header.h"
+#include "../My_C_header/My_C_header.h"
 
 #if T10_DONE
 

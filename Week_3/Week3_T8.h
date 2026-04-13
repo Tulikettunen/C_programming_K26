@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//#define T8_DONE
+#define T8_DONE
 
 int main_T8();
 void print_numbers(const int *array, int count);
